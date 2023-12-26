@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  creatBrowserRouter,
+  createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import './index.css';
 
-const router = creatBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <div>Hello World!</div>
