@@ -1,4 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
+import { getContacts } from "../contacts";
+
+// eslint-disable-next-line react-refresh/only-export-components
+export async function loader() {
+    const contacts = await getContacts();
+    return { contacts };
+}
 
 export default function Root() {
     return (
